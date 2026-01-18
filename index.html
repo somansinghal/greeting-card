@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Greeting Card Creator</h1>
+            <p>Create beautiful personalized greeting cards with images</p>
+        </header>
+
+        <div class="main-content">
+            <div class="editor-panel">
+                <h2>Customize Your Card</h2>
+                
+                <div class="control-group">
+                    <label for="occasion">Select Occasion:</label>
+                    <select id="occasion">
+                        <option value="custom">Custom</option>
+                        <option value="birthday">🎂 Birthday</option>
+                        <option value="anniversary">💑 Anniversary</option>
+                        <option value="wedding">💒 Wedding</option>
+                        <option value="christmas">🎄 Christmas</option>
+                        <option value="newyear">🎊 New Year</option>
+                        <option value="valentine">💝 Valentine's Day</option>
+                        <option value="graduation">🎓 Graduation</option>
+                        <option value="thankyou">🙏 Thank You</option>
+                        <option value="congratulations">🎉 Congratulations</option>
+                        <option value="getwell">💊 Get Well Soon</option>
+                        <option value="mothersday">🌹 Mother's Day</option>
+                        <option value="fathersday">👔 Father's Day</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="theme">Select Theme:</label>
+                    <select id="theme">
+                        <option value="custom">Custom</option>
+                        <option value="birthday-theme">🎂 Birthday Theme</option>
+                        <option value="romantic">💕 Romantic</option>
+                        <option value="elegant">✨ Elegant</option>
+                        <option value="festive">🎉 Festive</option>
+                        <option value="nature">🌿 Nature</option>
+                        <option value="ocean">🌊 Ocean</option>
+                        <option value="sunset">🌅 Sunset</option>
+                        <option value="forest">🌲 Forest</option>
+                        <option value="pastel">🌸 Pastel</option>
+                        <option value="vintage">📜 Vintage</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="imageUpload">Upload Background Image:</label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                </div>
+
+                <div class="control-group">
+                    <label for="cardText">Card Message:</label>
+                    <textarea id="cardText" placeholder="Enter your greeting message here...">Happy Birthday!</textarea>
+                </div>
+
+                <div class="control-group">
+                    <label for="fontSize">Font Size:</label>
+                    <input type="range" id="fontSize" min="20" max="80" value="40">
+                    <span id="fontSizeValue">40px</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="textColor">Text Color:</label>
+                    <input type="color" id="textColor" value="#ffffff">
+                </div>
+
+                <div class="control-group">
+                    <label for="fontFamily">Font Family:</label>
+                    <select id="fontFamily">
+                        <option value="Arial">Arial</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Impact">Impact</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="textPosition">Text Position:</label>
+                    <select id="textPosition">
+                        <option value="center">Center</option>
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="backgroundColor">Background Color (if no image):</label>
+                    <input type="color" id="backgroundColor" value="#4a90e2">
+                </div>
+
+                <button id="downloadBtn" class="download-btn">📥 Download Card</button>
+            </div>
+
+            <div class="preview-panel">
+                <h2>Preview</h2>
+                <div id="cardPreview" class="card-preview">
+                    <div id="cardContent" class="card-content">
+                        <p id="cardMessage">Happy Birthday!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
