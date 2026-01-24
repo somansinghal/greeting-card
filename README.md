@@ -5,8 +5,7 @@ A fun interactive greeting card web app built with JavaScript, HTML & CSS from t
 ## 🔗 Live Demo
 
 Try it out here:  
-👉 https://696cbc81e5d43d6f020e6b06--golden-semifreddo-e8048e.netlify.app 
-
+👉 https://greetingcardbysoman.netlify.app
 ## 📌 About
 
 This project displays a customizable greeting card experience in the browser. Users can interact with elements like background, messages, or animations to reveal greetings.
